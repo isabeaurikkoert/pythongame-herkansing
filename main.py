@@ -15,6 +15,7 @@ time.sleep(0.5)
 print(woord)
 geraden_letters = []
 fout_geraden_letters = []
+alfabet = "abcdefghijklmnopqristuvwxyz"
 
 tries = 10
 while tries > 0:
@@ -52,7 +53,8 @@ while tries > 0:
     time.sleep(0.5)
     print('fout geraden letters:')
     print(sorted(fout_geraden_letters))
-
+  if guess != alfabet:
+    print("kies een letter uit het alfabet")
     break 
 if tries == 0:
   print("jammer je beurten zijn om het woord was " + doggo, "volgende keer beter;)")

@@ -15,7 +15,6 @@ time.sleep(0.5)
 print(woord)
 geraden_letters = []
 fout_geraden_letters = []
-geraden_woorden = []
 
 tries = 10
 while tries > 0:
@@ -32,7 +31,7 @@ while tries > 0:
       geraden_letters.append(guess)
       time.sleep(0.5)
       print("fout geraden letters:")
-      print(fout_geraden_letters)
+      print(sorted(fout_geraden_letters))
     else:
       print("goed geraden!")
       geraden_letters.append(guess)
@@ -44,9 +43,16 @@ while tries > 0:
             print("je hebt nog", + tries, "pogingen")
             time.sleep(0.5)
             print('fout geraden letters:')
-            print(fout_geraden_letters)
+            print(sorted(fout_geraden_letters))
   if len(guess) != 1:
     print("je kan maar één letter per beurt proberen;)")
+    tries -= 1
+    time.sleep(0.5)
+    print("je hebt nog", + tries, "pogingen")
+    time.sleep(0.5)
+    print('fout geraden letters:')
+    print(sorted(fout_geraden_letters))
+
     break 
 if tries == 0:
   print("jammer je beurten zijn om het woord was " + doggo, "volgende keer beter;)")

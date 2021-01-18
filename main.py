@@ -19,7 +19,7 @@ geraden_woorden = []
 
 tries = 10
 while tries > 0:
-  guess = input("raad een letter of woord")
+  guess = input("raad een letter")
   if len(guess) == 1 and guess.isalpha():
     if guess in geraden_letters:
       print("oeps die heb je al geprobeerd")
@@ -45,6 +45,12 @@ while tries > 0:
             time.sleep(0.5)
             print('fout geraden letters:')
             print(fout_geraden_letters)
+  if len(guess) != 1:
+    print("je kan maar één letter per beurt proberen;)")
+    break 
+if tries == 0:
+  print("jammer je beurten zijn om het woord was " + doggo, "volgende keer beter;)")
+
    
 
 

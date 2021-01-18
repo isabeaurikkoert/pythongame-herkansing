@@ -1,5 +1,5 @@
 import random
-
+import sys 
 list = ['dog', 'chocolatemilk', 'picknick', 'shoppingcart', 'computer', 'music', 'tea', 'sunrise', 'beach', 'baseball', 'fireball', 'party', 'goose', 'sad', 'shower', 'tears', 'fighting', 'naïve', 'daisy', 'flowers']
 
 #print woord
@@ -16,18 +16,25 @@ fout_geraden_letters = []
 
 
 tries = 10
-while niet geraden and tries > 0:
+while tries > 0:
     guess = input("raad een letter of woord")
     if len(guess) == 1 and guess.isalpha():
       if guess in geraden_letters:
         print("oeps die heb je al geprobeerd")
-      elif guess not in doggo:
-        print("jammer die zit er niet in")
-        tries -= 1
-        print("je hebt nog", + tries, "pogingen")
-        fout_geraden_letters.append(guess)
-        geraden_letters.append(guess)
-        print(fout_geraden_letters)
-      else: #goed geraden letter
-        print("goed geraden!")
-        
+    elif len(guess) == 1 and guess.isalpha():
+        if guess not in doggo:
+          print("jammer die zit er niet in")
+          tries -= 1
+         print("je hebt nog", + tries, "pogingen")
+         fout_geraden_letters.append(guess)
+         geraden_letters.append(guess)
+         print("fout geraden letters", + fout_geraden_letters)
+    elif len(guess) == 1 and guess.isalpha():
+      if guess
+
+reactie = input("wil je nog een keer spelen?")
+while true:
+  if reactie == ja
+    break
+  elif reactie == nee
+    sys.exit("jammer, doeidoei")

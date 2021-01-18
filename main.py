@@ -1,7 +1,7 @@
 import random
 import sys 
 import time
-list = ['dog', 'chocolatemilk', 'picknick', 'shoppingcart', 'computer', 'music', 'tea', 'sunrise', 'beach', 'baseball', 'fireball', 'party', 'goose', 'sad', 'shower', 'tears', 'fighting', 'naïve', 'daisy', 'flowers']
+list = ['dog', 'chocolatemilk', 'picknick', 'shoppingcart', 'computer', 'music', 'tea', 'sunrise', 'beach', 'baseball', 'fireball', 'party', 'goose', 'sad', 'shower', 'tears', 'fighting', 'naïve', 'daisy', 'flowers','noodles', 'schilderij', 'wandelen', 'knuffelen', 'verband', 'lockdown', 'kabinet', 'honger', 'biologie', 'scheikunde', 'toetsweek', 'leren', 'marathon', 'museum', 'voorwerp', 'attribuut', 'portretfoto', 'fotografie', 'husky', 'telefoon', 'piano', 'gitaar', 'zingen', 'netflix', 'videoland', 'koolstofmonooxide', 'giftig', 'dood', 'leven', 'god', 'hel', 'lampjes', 'vakantie', 'snowboarden', 'sneeuw', 'stoel', 'plant', 'kleiien', 'bakje', 'verven', 'kikker', 'cadeautje', 'verjaardag', 'rijbewijs', 'klok', 'tijd', 'openhaard', 'vuur', 'gevaar', 'warmte', 'gezelligheid']
 
 #print woord
 doggo = random.choice(list)
